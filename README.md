@@ -40,18 +40,13 @@ The `1_acquire_data.Rmd` file and the other subsequent files in the `analysis/` 
 3. Load the appropriate packages that you will need. 
 4. Include the relevant code to acquire and store the data on your disk.
   - Your strategy may be a direct download, API interface, or webscrape. If you acquire your data through another method, say a manual download, make sure that you document in detail where and what you did to acquire the data. 5. Make sure that your data is stored on disk in a plain-text format inside the `data/orginal/` directory. 
+6. Source the `_pipeline.R` file. Either through: 
+  - opening the `_pipeline.R` file and clicking the 'Source' button.
+  - or, in the R Console running `source("_pipeline.R")`
 
 Each step of your project should be seen as modular --that is, that one script should not directly depend on the next in the sequence. By storing the relevant data necessary for the next step in the `data/original/` directory you are ensuring that no object from the `1_acquire_data.Rmd` R session is required for the next step `2_curate_dataset.Rmd`, and so on.
 
-
-
 *Note: The exact data acquisition steps will likely change in the coming weeks, but it is important to make a concerted effort to develop the scaffolding (even if only [psuedocode](https://codinghero.ai/what-is-pseudocode/)). We will workshop the ideas that surface from the work on this project orientation step and discuss collective and individual questions to continue to develop and hone our projects so that they show the most promise for being viable.*
-
-
-Source the `_pipeline.R` file. Either through: 
-
-  - opening the `_pipeline.R` file and clicking the 'Source' button.
-  - or, in the R Console runninng `source("_pipeline.R")`
 
 ### Update GitHub
 
